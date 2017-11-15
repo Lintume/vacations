@@ -1,5 +1,5 @@
 <?php
-require_once  __DIR__.'/db/connectionDB.php';
+require_once __DIR__ . '/../db/connectionDB.php';
 class CreateUsersTable extends connectionDB
 {
     public function createTable() // sql to create table

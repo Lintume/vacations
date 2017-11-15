@@ -1,6 +1,6 @@
 <?php
 
-require_once  __DIR__.'/../seeds/db/connectionDB.php';
+require_once __DIR__ . '/../db/connectionDB.php';
 
 class User {
 	private $table  = 'users';
