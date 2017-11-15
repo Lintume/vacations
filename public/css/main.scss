@@ -1,0 +1,51 @@
+@mixin main($k) {
+  body{
+    overflow-x: hidden;
+  }
+  #newUserForm {
+    width: 500px *$k;
+    border: 1px solid gray;
+    position: fixed;
+    top: 100px *$k;
+    right: -480px *$k;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px*$k;
+    a.btn,button{
+      margin-top: 10px;
+    }
+    animation-name: newUserFormOut;
+    animation-duration: 2s;
+  }
+  @keyframes newUserFormIn {
+    from{
+      right: -480px*$k;
+    }
+    to{
+      right: 0;
+    }
+  }
+  @keyframes newUserFormOut {
+    from{
+      right: 0;
+    }
+    to{
+      right: -480px*$k;
+    }
+  }
+  #newUserForm:hover, #newUserForm:focus, #newUserForm:active {
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 100px*$k;
+    background: rgba(255, 255, 255, 1);
+    animation-name: newUserFormIn;
+    animation-duration: 2s;
+
+
+  }
+
+
+}
+
+$k: 1;
+@include main($k);

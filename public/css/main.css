@@ -1,0 +1,36 @@
+body {
+  overflow-x: hidden; }
+
+#newUserForm {
+  width: 500px;
+  border: 1px solid gray;
+  position: fixed;
+  top: 100px;
+  right: -480px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  animation-name: newUserFormOut;
+  animation-duration: 2s; }
+  #newUserForm a.btn, #newUserForm button {
+    margin-top: 10px; }
+
+@keyframes newUserFormIn {
+  from {
+    right: -480px; }
+  to {
+    right: 0; } }
+@keyframes newUserFormOut {
+  from {
+    right: 0; }
+  to {
+    right: -480px; } }
+#newUserForm:hover, #newUserForm:focus, #newUserForm:active {
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  background: white;
+  animation-name: newUserFormIn;
+  animation-duration: 2s; }
+
+/*# sourceMappingURL=main.css.map */
